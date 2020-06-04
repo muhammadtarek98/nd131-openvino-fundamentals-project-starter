@@ -36,9 +36,16 @@ class Network:
 
     def __init__(self):
         ### TODO: Initialize any class variables desired ###
+        self.core=IEcore()
+        self.network=None
+        self.execute_network = None
+        self.input_frame=None
+        self.output=None
+        self.inference_request=None
 
     def load_model(self):
         ### TODO: Load the model ###
+      
         ### TODO: Check for supported layers ###
         ### TODO: Add any necessary extensions ###
         ### TODO: Return the loaded inference plugin ###
